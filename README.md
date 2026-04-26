@@ -138,30 +138,6 @@ Apos remocao de um compromisso, o sistema:
 1. renumera os IDs existentes para manter sequencia continua (`1, 2, 3...`)
 2. ajusta a sequence do PostgreSQL para o proximo insert
 
-Isso e util para apps pequenos e didaticos. Em sistemas com relacoes entre tabelas (chaves estrangeiras), essa pratica geralmente nao e recomendada.
-
-## Solucao de Problemas
-
-### Erro de conexao no banco
-
-Revise host, porta, usuario, senha e nome do banco em `agenda_db.py`.
-
-### Erro `UndefinedTable: relacao "compromissos" nao existe`
-
-Execute o app via `python main.py` para disparar a criacao automatica da tabela.
-
-### Data invalida
-
-Use sempre `AAAA-MM-DD`, por exemplo: `2026-12-31`.
-
-### Dependencia `psycopg2` falhando no Windows
-
-Tente:
-
-```bash
-pip install psycopg2-binary
-```
-
 ## Melhorias Futuras (Sugestoes)
 
 - Busca/filtro por nome e data
