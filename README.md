@@ -37,7 +37,6 @@ Arquivos principais:
 - `main.py`: ponto de entrada da aplicacao
 - `agenda_gui.py`: interface grafica e interacoes de tela
 - `agenda_db.py`: acesso ao banco e operacoes CRUD
-- `func.py`: arquivo legado (nao necessario para o fluxo atual)
 
 > O fluxo atual recomendado usa `main.py` + `agenda_gui.py` + `agenda_db.py`.
 
